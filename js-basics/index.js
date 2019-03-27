@@ -1,9 +1,12 @@
-
-function getGrade(score) {
-    let grade;
-    // Write your code here
-    grade = 'FEDCBA'[~~((score-1)/5)];
-    return grade;
+function createCircle(radius) {
+    return {
+        radius,
+        draw() {
+            console.log('draw');
+        }
+    };
 }
 
-console.log(getGrade(11));
+const circle1 = createCircle(1);
+console.log(circle1);
+circle1.draw();
